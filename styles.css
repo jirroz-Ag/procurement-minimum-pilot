@@ -19,3 +19,13 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
 footer{max-width:var(--max);margin:40px auto 0;padding:28px 22px 60px;border-top:1px solid var(--line);color:var(--muted)}.nextprev{display:flex;justify-content:space-between;gap:12px;margin-top:32px}.nextprev a{flex:1;padding:16px 18px;border:1px solid var(--line);background:#fff;border-radius:14px;text-decoration:none;font-weight:800}.nextprev a:last-child{text-align:right}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.cols{grid-template-columns:1fr}.flow{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:620px){.grid,.stats{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.section-head{display:block}nav>a:not(.brand){font-size:.82rem}.nextprev{display:block}.nextprev a{display:block;margin:8px 0}}
+
+.kraljic-wrap{margin:24px 0 8px;display:grid;grid-template-columns:56px 1fr;grid-template-rows:1fr 42px;gap:10px;align-items:stretch}
+.kraljic-y{writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.kraljic-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;min-height:440px}
+.kraljic-cell{padding:20px;border-radius:18px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.kraljic-cell h3{margin:0 0 8px}.kraljic-cell p{margin:.35rem 0}.kraljic-cell .strategy{font-weight:850;margin-top:12px}
+.k-leverage{background:#eef7f4}.k-strategic{background:#e9f1f7}.k-noncritical{background:#f7f8f9}.k-bottleneck{background:#fbf1e8}
+.kraljic-x{grid-column:2;display:flex;justify-content:space-between;align-items:center;font-size:.78rem;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.prompt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.prompt-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.prompt-card h3{margin-top:0}.prompt-card pre{white-space:pre-wrap;margin:0;padding:14px;border-radius:12px;background:#f4f7f9;font:13px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;color:#263444}
+@media(max-width:760px){.kraljic-wrap{grid-template-columns:1fr;grid-template-rows:auto}.kraljic-y{writing-mode:horizontal-tb;transform:none}.kraljic-grid{grid-template-columns:1fr;grid-template-rows:auto;min-height:0}.kraljic-x{grid-column:1}.prompt-grid{grid-template-columns:1fr}}
